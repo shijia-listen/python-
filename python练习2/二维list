@@ -1,0 +1,6 @@
+list_2d = [ [2 for i in range(5)] for  i in range(4)]  #前面是将2覆盖掉range（5）中每一个值，后面for是便利4次，并且将覆盖得到的值赋到每一列的每个元素中。
+list_2d[0].append(3) #在第一列中添加一个3
+list_2d[0].append(5)  #在第一列中添加一个5
+list_2d[2].append(7)  #在第三列中添加一个7
+
+

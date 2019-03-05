@@ -1,0 +1,22 @@
+#fo=open('foo.txt','r+')#你必须先用内置函数open()打开一个文件，创建一个file对象，相关的方法才能调用它进行读和写
+#print'文件名：',fo.name
+#print '是否已关闭:',fo.closed
+#print '访问模式:',fo.mode
+#print '末尾是否强制加空格：',fo.softspace
+#fo.close()
+#print '文件名:',fo.name
+#print '9是否关闭：',fo.closed
+#fo.write('hello world have fun!\n')
+#str=fo.read(11)
+#print '读取的字符串是:',str
+#position=fo.tell()
+#print '当前的位置：',position
+#position=fo.seek(0,0)
+#str=fo.read(11)
+#print '读取的字符串是:',str
+#fo.close()
+import os
+#os.rename('foo.txt','foo1.txt')
+#os.remove('foo1.txt')
+#os.mkdir('test')
+os.chdir('/home/test')

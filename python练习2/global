@@ -1,0 +1,7 @@
+Monkey=2000
+def AddMonkey():
+    global Monkey  #声明一下monkey
+    Monkey=Monkey+1
+print  Monkey  #没有调用函数的时候
+AddMonkey()
+print Monkey  #调用后的monkey

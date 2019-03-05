@@ -1,0 +1,44 @@
+list1=['hello','jia',12,20.3]
+list2=['world','hi','80']
+list3=[1,2,3,1]
+print 'list1:',list1  #打印列表1
+print 'list2:',list2  #打印列表2
+print 'list1[0]:',list1[0]  #打印列表1中第一个值
+print 'list2[1]:',list2[1]  #打印列表2中的第二个值  访问列表中的值
+print 'list1[0:3]:',list1[0:3]
+list1.append('leihao')  #增加列表一种的值
+print list1
+del list2[0]     #删除列表2中第一个值
+print list2
+a=len(list1)
+print a
+b=list1+list2
+print b
+c=list1[1]*3
+print c
+if (0 in list1):
+    print 'true'
+else:
+    print 'false'
+for x in list1:
+    print x
+print cmp(list1,list2)
+print max(list3)
+print min(list3)
+print list3.count(1)   #1在list3中的个数
+#list2.extend(list3) print list2   把list3列添加到list2列后面
+print list2.extend(list3)
+print list2
+print list3.index(1)  #1在3列表中索引位置
+list3.insert(2,5)  #在索引2中加入元素5  分开写
+print list3
+list3.pop(2)#2是索引 pop()默认移除最后一个
+print list3
+list3.remove(1)  #移除1
+print list3
+list3.reverse()  #倒叙
+print list3
+list3.sort(reverse=True)  #True是降序 False是升序
+list3
+
+

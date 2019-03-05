@@ -1,0 +1,7 @@
+var=10
+while var>0:
+    var=var-1
+    if (var%2==0):
+        continue
+    print '当前值:',var
+print '结束'

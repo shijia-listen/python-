@@ -1,0 +1,4 @@
+numbers=[2,3]
+i=0
+numbers[i],numbers[i+1]=numbers[i+1],numbers[i]
+print numbers

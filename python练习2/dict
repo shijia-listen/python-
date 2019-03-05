@@ -1,0 +1,31 @@
+import copy
+dict={'name':'jenny',123:6,'age':22,'class':'math'}
+print dict
+print dict['name']
+dict['age']=20
+dict['project']='history'  #值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组
+print dict
+del dict['age']
+print dict  #删除键为age的键值
+#del dict
+#print dict['name']   删掉了整个字典
+#dict1={'name':'liming',['age']:20,'project':'math'}
+#print dict['name']  键不能为列表
+dict1={'school':'qinghua','sex':'woman'}
+print cmp(dict,dict1)
+print len(dict1)
+print len(dict)
+print str(dict)  #输入字典就可以打印字符串来表示
+print type(dict)  #返回值类型
+print dict1.clear()  #删除字典1中所有元素，字典1为空字典了
+print dict1
+dict5={'name':'danny','age':13,'sex':'male','num':[1,2,3]}
+dict6=dict5
+dict7=dict5.copy()#浅拷贝 深拷贝父对象，子对象不拷贝，是引用过来的
+dict8=copy.deepcopy(dict5)    #深拷贝父对象和子对象
+dict5['name']='jiajia'
+dict5['num'].append(4)
+print dict5
+print dict6
+print dict7
+print dict8
